@@ -1,0 +1,42 @@
+body
+{
+    background-color: #9d9d9d;
+    color: #000000;
+}
+
+.container
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+h2
+{
+    font-size: 20px;
+}
+
+footer
+{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.yam212
+{
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+}
+
+.cube30x
+{
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+}
