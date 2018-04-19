@@ -4,172 +4,168 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Muzyka - rytm życia</title>
-    <!-- Bootstrap -->
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link href="style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&amp;subset=latin-ext" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+    <script>
+        jQuery(function ($) {
+                $.scrollTo(0);
+
+                $('#link1').click(function () {
+                    $.scrollTo($('#fil-o-m'), 500);
+                });
+                $('#link2').click(function () {
+                    $.scrollTo($('#for-por-muz'), 500);
+                });
+                $('#link3').click(function () {
+                    $.scrollTo($('#m-git'), 500);
+                });
+                $('#link4').click(function () {
+                    $.scrollTo($('#m-ulub-u'), 500);
+                });
+                $('.scroll-up').click(function () {
+                    $.scrollTo($('body'), 1000);
+                });
+            }
+        );
+
+        $(window).scroll(function () {
+                if ($(this).scrollTop() > 250) $('.scroll-up').fadeIn();
+                else $('.scroll-up').fadeOut();
+            }
+        );
+
+    </script>
 </head>
 <body>
 
 <div class="container">
-
+    <a href="#" class="scroll-up"></a>
     <div class="row">
         <div class="col-xs-12">
             <h1>Muzyka...</h1>
             <blockquote class="blockquote-reverse">
-                <p>"...powinna zapalać płomień w sercu mężczyzny, i napełniać łzami oczy kobiety."</p>
-                <footer class="blockquote-footer"><cite title="Ludwik Van Beethoven">Ludwik Van Beethoven</cite></footer>
+                <p>"...powinna zapalać płomień w sercu mężczyzny i napełniać łzami oczy kobiety."</p>
+                <footer class="blockquote-footer"><cite title="Ludwik Van Beethoven">Ludwik Van Beethoven</cite>
+                </footer>
             </blockquote>
         </div>
     </div>
 
-    <nav>
+    <nav class="navi">
         <div class="row">
-            <div class="col-xs-12 col-sm-3"><a href="#">Filozoficznie o muzyce</a></div>
-            <div class="col-xs-12 col-sm-3"><a href="#">Forum i portale muzyczne</a></div>
-            <div class="col-xs-12 col-sm-3"><a href="#">Moja gitara</a></div>
-            <div class="col-xs-12 col-sm-3"><a href="#">Moje ulubione utwory</a></div>
+
+            <div class="col-xs-12 col-sm-3"><a id="link1" class="links" href="#">
+                <div class="menu-chap">Filozoficznie o muzyce</div>
+            </a></div>
+            <div class="col-xs-12 col-sm-3"><a id="link2" class="links" href="#">
+                <div class="menu-chap">Forum i portale muzyczne</div>
+            </a></div>
+            <div class="col-xs-12 col-sm-3"><a id="link3" class="links" href="#">
+                <div class="menu-chap">Moja gitara</div>
+            </a></div>
+            <div class="col-xs-12 col-sm-3"><a id="link4" class="links" href="#">
+                <div class="menu-chap">Moje ulubione utwory</div>
+            </a></div>
+
         </div>
     </nav>
     <main>
         <div class="row">
-            <div class="col-xs-12">
-                <h2>Filozoficznie o muzyce</h2>
-                <p class="white-back">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eros libero, non rhoncus
-                    libero
-                    commodo eu. Morbi porttitor nulla erat, eu pretium leo gravida id. Sed lacinia laoreet nibh.
-                    Pellentesque
-                    non efficitur augue, et eleifend diam. Vivamus pellentesque, diam condimentum volutpat auctor, quam
-                    ipsum
+            <div class="col-xs-12 chapter">
+                <h2 id="fil-o-m">Filozoficznie o muzyce</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eros
+                    libero, non rhoncus
+                    libero commodo eu. Morbi porttitor nulla erat, eu pretium leo gravida id. Sed lacinia laoreet nibh.
+                    Pellentesque non efficitur augue, et eleifend diam. Vivamus pellentesque, diam condimentum volutpat
+                    auctor, quam ipsum
                     dapibus eros, posuere congue ex sapien in orci. Nunc non pellentesque dolor, quis mattis nunc.
-                    Vestibulum a
-                    quam pellentesque orci egestas gravida id sit amet quam. Nullam ornare purus ac nisl hendrerit, eu
-                    sollicitudin nisl auctor. Sed et bibendum quam. Pellentesque ac vulputate neque. Praesent eleifend
-                    urna quis
-                    maximus feugiat. Donec fermentum augue nec neque varius vulputate. Duis ac bibendum est. Vivamus
-                    consequat
-                    felis lacus, nec mattis nibh consectetur et. Sed tincidunt commodo sagittis. Interdum et malesuada
-                    fames ac
-                    ante ipsum primis in faucibus.</p>
+                    Vestibulum a quam pellentesque orci egestas gravida id sit amet quam. Nullam ornare purus ac nisl
+                    hendrerit, eu sollicitudin nisl auctor. Sed et bibendum quam. Pellentesque ac vulputate neque.
+                    Praesent eleifend urna quis maximus feugiat. Donec fermentum augue nec neque varius vulputate. Duis
+                    ac bibendum est. Vivamus consequat felis lacus, nec mattis nibh consectetur et. Sed tincidunt
+                    commodo sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 
-                <p class="white-back">In hac habitasse platea dictumst. Vivamus ut dolor vitae purus imperdiet finibus vitae et elit. Sed
-                    eu velit
+                <p>In hac habitasse platea dictumst. Vivamus ut dolor vitae purus imperdiet finibus
+                    vitae et elit. Sed eu velit
                     non velit cursus efficitur. Vestibulum fermentum turpis sagittis volutpat euismod. Nam a laoreet
-                    velit,
-                    vulputate finibus augue. Praesent imperdiet turpis vitae rutrum interdum. Nam mauris libero, lacinia
-                    eu
-                    ornare sit amet, semper quis magna. Vivamus sed congue risus. Nullam et lectus imperdiet, vulputate
-                    nisl ac,
-                    blandit sapien.</p>
+                    velit, vulputate finibus augue. Praesent imperdiet turpis vitae rutrum interdum. Nam mauris libero,
+                    lacinia eu ornare sit amet, semper quis magna. Vivamus sed congue risus. Nullam et lectus imperdiet,
+                    vulputate nisl ac, blandit sapien.</p>
             </div>
-            <div class="col-xs-12">
-                <h2>Forum i portale muzyczne</h2>
-                <p class="white-back">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eros libero, non rhoncus
-                    libero
-                    commodo eu. Morbi porttitor nulla erat, eu pretium leo gravida id. Sed lacinia laoreet nibh.
-                    Pellentesque
-                    non efficitur augue, et eleifend diam. Vivamus pellentesque, diam condimentum volutpat auctor, quam
-                    ipsum
-                    dapibus eros, posuere congue ex sapien in orci. Nunc non pellentesque dolor, quis mattis nunc.
-                    Vestibulum a
-                    quam pellentesque orci egestas gravida id sit amet quam. Nullam ornare purus ac nisl hendrerit, eu
-                    sollicitudin nisl auctor. Sed et bibendum quam. Pellentesque ac vulputate neque. Praesent eleifend
-                    urna quis
-                    maximus feugiat. Donec fermentum augue nec neque varius vulputate. Duis ac bibendum est. Vivamus
-                    consequat
-                    felis lacus, nec mattis nibh consectetur et. Sed tincidunt commodo sagittis. Interdum et malesuada
-                    fames ac
-                    ante ipsum primis in faucibus.</p>
+            <div class="col-xs-12 chapter">
+                <h2 id="for-por-muz">Forum i portale muzyczne</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eros
+                    libero, non rhoncus libero commodo eu. Morbi porttitor nulla erat, eu pretium leo gravida id. Sed
+                    lacinia laoreet nibh. Pellentesque non efficitur augue, et eleifend diam. Vivamus pellentesque, diam
+                    condimentum volutpat auctor, quam ipsum dapibus eros, posuere congue ex sapien in orci. Nunc non
+                    pellentesque dolor, quis mattis nunc. Vestibulum a quam pellentesque orci egestas gravida id sit
+                    amet quam. Nullam ornare purus ac nisl hendrerit, eu sollicitudin nisl auctor. Sed et bibendum quam.
+                    Pellentesque ac vulputate neque. Praesent eleifend urna quis maximus feugiat. Donec fermentum augue
+                    nec neque varius vulputate. Duis ac bibendum est. Vivamus consequat felis lacus, nec mattis nibh
+                    consectetur et. Sed tincidunt commodo sagittis. Interdum et malesuada fames ac ante ipsum primis in
+                    faucibus.</p>
 
-                <p class="white-back">In hac habitasse platea dictumst. Vivamus ut dolor vitae purus imperdiet finibus vitae et elit. Sed
-                    eu velit
-                    non velit cursus efficitur. Vestibulum fermentum turpis sagittis volutpat euismod. Nam a laoreet
-                    velit,
-                    vulputate finibus augue. Praesent imperdiet turpis vitae rutrum interdum. Nam mauris libero, lacinia
-                    eu
-                    ornare sit amet, semper quis magna. Vivamus sed congue risus. Nullam et lectus imperdiet, vulputate
-                    nisl ac,
-                    blandit sapien.</p>
+                <p>In hac habitasse platea dictumst. Vivamus ut dolor vitae purus imperdiet finibus
+                    vitae et elit. Sed eu velit non velit cursus efficitur. Vestibulum fermentum turpis sagittis
+                    volutpat euismod. Nam a laoreet velit, vulputate finibus augue. Praesent imperdiet turpis vitae
+                    rutrum interdum. Nam mauris libero, lacinia eu ornare sit amet, semper quis magna. Vivamus sed
+                    congue risus. Nullam et lectus imperdiet, vulputate nisl ac, blandit sapien.</p>
             </div>
-            <div class="col-xs-12">
-                <h2>Moja gitara</h2>
-                <p class="white-back">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eros libero, non rhoncus
-                    libero
-                    commodo eu. Morbi porttitor nulla erat, eu pretium leo gravida id. Sed lacinia laoreet nibh.
-                    Pellentesque
-                    non efficitur augue, et eleifend diam. Vivamus pellentesque, diam condimentum volutpat auctor, quam
-                    ipsum
-                    dapibus eros, posuere congue ex sapien in orci. Nunc non pellentesque dolor, quis mattis nunc.
-                    Vestibulum a
-                    quam pellentesque orci egestas gravida id sit amet quam. Nullam ornare purus ac nisl hendrerit, eu
-                    sollicitudin nisl auctor. Sed et bibendum quam. Pellentesque ac vulputate neque. Praesent eleifend
-                    urna quis
-                    maximus feugiat. Donec fermentum augue nec neque varius vulputate. Duis ac bibendum est. Vivamus
-                    consequat
-                    felis lacus, nec mattis nibh consectetur et. Sed tincidunt commodo sagittis. Interdum et malesuada
-                    fames ac
-                    ante ipsum primis in faucibus.</p>
-                <img class="yam212" src="img/yamahaPacifica212.png"/>
-                <p class="white-back">In hac habitasse platea dictumst. Vivamus ut dolor vitae purus imperdiet finibus vitae et elit. Sed
-                    eu velit
-                    non velit cursus efficitur. Vestibulum fermentum turpis sagittis volutpat euismod. Nam a laoreet
-                    velit,
-                    vulputate finibus augue. Praesent imperdiet turpis vitae rutrum interdum. Nam mauris libero, lacinia
-                    eu
-                    ornare sit amet, semper quis magna. Vivamus sed congue risus. Nullam et lectus imperdiet, vulputate
-                    nisl ac,
-                    blandit sapien.</p>
-                <img class="cube30x" src="img/rolandCube30x.png"/>
-                <p class="white-back">In hac habitasse platea dictumst. Vivamus ut dolor vitae purus imperdiet finibus vitae et elit. Sed
-                    eu velit
-                    non velit cursus efficitur. Vestibulum fermentum turpis sagittis volutpat euismod. Nam a laoreet
-                    velit,
-                    vulputate finibus augue. Praesent imperdiet turpis vitae rutrum interdum. Nam mauris libero, lacinia
-                    eu
-                    ornare sit amet, semper quis magna. Vivamus sed congue risus. Nullam et lectus imperdiet, vulputate
-                    nisl ac,
-                    blandit sapien.</p>
-                <img class="kostki" src="img/kostki.jpg"/>
+            <div class="col-xs-12 chapter">
+                <h2 id="m-git">Moja gitara</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eros
+                    libero, non rhoncus libero commodo eu. Morbi porttitor nulla erat, eu pretium leo gravida id. Sed
+                    lacinia laoreet nibh. Pellentesque non efficitur augue, et eleifend diam. Vivamus pellentesque, diam
+                    condimentum volutpat auctor, quam ipsum dapibus eros, posuere congue ex sapien in orci. Nunc non
+                    pellentesque dolor, quis mattis nunc. Vestibulum a quam pellentesque orci egestas gravida id sit
+                    amet quam. Nullam ornare purus ac nisl hendrerit, eu sollicitudin nisl auctor. Sed et bibendum quam.
+                    Pellentesque ac vulputate neque. Praesent eleifend urna quis maximus feugiat. Donec fermentum augue
+                    nec neque varius vulputate. Duis ac bibendum est. Vivamus consequat felis lacus, nec mattis nibh
+                    consectetur et. Sed tincidunt commodo sagittis. Interdum et malesuada fames ac ante ipsum primis in
+                    faucibus.</p>
+                <img class="photo" src="img/yamahaPacifica212.png"/>
+                <p>In hac habitasse platea dictumst. Vivamus ut dolor vitae purus imperdiet finibus
+                    vitae et elit. Sed eu velit non velit cursus efficitur. Vestibulum fermentum turpis sagittis
+                    volutpat euismod. Nam a laoreet velit, vulputate finibus augue. Praesent imperdiet turpis vitae
+                    rutrum interdum. Nam mauris libero, lacinia eu ornare sit amet, semper quis magna. Vivamus sed
+                    congue risus. Nullam et lectus imperdiet, vulputate nisl ac, blandit sapien.</p>
+                <img class="photo" src="img/rolandCube30x.png"/>
+                <p>In hac habitasse platea dictumst. Vivamus ut dolor vitae purus imperdiet finibus
+                    vitae et elit. Sed eu velit non velit cursus efficitur. Vestibulum fermentum turpis sagittis
+                    volutpat euismod. Nam a laoreet velit, vulputate finibus augue. Praesent imperdiet turpis vitae
+                    rutrum interdum. Nam mauris libero, lacinia eu ornare sit amet, semper quis magna. Vivamus sed
+                    congue risus. Nullam et lectus imperdiet, vulputate nisl ac, blandit sapien.</p>
+                <img class="photo" src="img/kostki.jpg"/>
 
             </div>
-            <div class="col-xs-12">
-                <h2>Moje ulubione utwory</h2>
-                <p class="white-back">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eros libero, non rhoncus
-                    libero
-                    commodo eu. Morbi porttitor nulla erat, eu pretium leo gravida id. Sed lacinia laoreet nibh.
-                    Pellentesque
-                    non efficitur augue, et eleifend diam. Vivamus pellentesque, diam condimentum volutpat auctor, quam
-                    ipsum
-                    dapibus eros, posuere congue ex sapien in orci. Nunc non pellentesque dolor, quis mattis nunc.
-                    Vestibulum a
-                    quam pellentesque orci egestas gravida id sit amet quam. Nullam ornare purus ac nisl hendrerit, eu
-                    sollicitudin nisl auctor. Sed et bibendum quam. Pellentesque ac vulputate neque. Praesent eleifend
-                    urna quis
-                    maximus feugiat. Donec fermentum augue nec neque varius vulputate. Duis ac bibendum est. Vivamus
-                    consequat
-                    felis lacus, nec mattis nibh consectetur et. Sed tincidunt commodo sagittis. Interdum et malesuada
-                    fames ac
-                    ante ipsum primis in faucibus.</p>
+            <div class="col-xs-12 chapter">
+                <h2 id="m-ulub-u">Moje ulubione utwory</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec suscipit eros
+                    libero, non rhoncus libero commodo eu. Morbi porttitor nulla erat, eu pretium leo gravida id. Sed
+                    lacinia laoreet nibh. Pellentesque non efficitur augue, et eleifend diam. Vivamus pellentesque, diam
+                    condimentum volutpat auctor, quam ipsum dapibus eros, posuere congue ex sapien in orci. Nunc non
+                    pellentesque dolor, quis mattis nunc. Vestibulum a quam pellentesque orci egestas gravida id sit
+                    amet quam. Nullam ornare purus ac nisl hendrerit, eu sollicitudin nisl auctor. Sed et bibendum quam.
+                    Pellentesque ac vulputate neque. Praesent eleifend urna quis maximus feugiat. Donec fermentum augue
+                    nec neque varius vulputate. Duis ac bibendum est. Vivamus consequat felis lacus, nec mattis nibh
+                    consectetur et. Sed tincidunt commodo sagittis. Interdum et malesuada fames ac ante ipsum primis in
+                    faucibus.</p>
 
-                <p class="white-back">In hac habitasse platea dictumst. Vivamus ut dolor vitae purus imperdiet finibus vitae et elit. Sed
-                    eu velit
-                    non velit cursus efficitur. Vestibulum fermentum turpis sagittis volutpat euismod. Nam a laoreet
-                    velit,
-                    vulputate finibus augue. Praesent imperdiet turpis vitae rutrum interdum. Nam mauris libero, lacinia
-                    eu
-                    ornare sit amet, semper quis magna. Vivamus sed congue risus. Nullam et lectus imperdiet, vulputate
-                    nisl ac,
-                    blandit sapien.</p>
+                <p>In hac habitasse platea dictumst. Vivamus ut dolor vitae purus imperdiet finibus
+                    vitae et elit. Sed eu velit non velit cursus efficitur. Vestibulum fermentum turpis sagittis
+                    volutpat euismod. Nam a laoreet velit, vulputate finibus augue. Praesent imperdiet turpis vitae
+                    rutrum interdum. Nam mauris libero, lacinia eu ornare sit amet, semper quis magna. Vivamus sed
+                    congue risus. Nullam et lectus imperdiet, vulputate nisl ac, blandit sapien.</p>
             </div>
         </div>
     </main>
